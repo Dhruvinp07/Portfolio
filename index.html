@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dhruvin Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar glass">
+        <img src="https://i.pravatar.cc/100" class="profile-img">
+        <h3>Dhruvin</h3>
+        <p>Developer</p>
+
+        <div class="menu">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('skills')">Skills</button>
+            <button onclick="showPage('goals')">Goals</button>
+            <button onclick="showPage('contact')">Contact</button>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main glass">
+
+        <!-- HOME -->
+        <div id="home" class="page active">
+            <h1>Dhruvin</h1>
+            <p class="subtitle">Aspiring Developer</p>
+            <p>I build AI projects, websites and smart systems.</p>
+            <p><b>Focused on:</b> Web Development | AI | Python</p>
+        </div>
+
+        <!-- ABOUT -->
+        <div id="about" class="page">
+            <h2>About Me</h2>
+            <p>I am a passionate developer who enjoys building creative and futuristic projects.</p>
+            <p>Currently learning web development, AI, and system-based applications.</p>
+            <p>I like solving problems and turning ideas into real working projects.</p>
+        </div>
+
+        <!-- SKILLS -->
+        <div id="skills" class="page">
+            <h2>Skills</h2>
+
+            <h3>Languages</h3>
+            <p>HTML, CSS, JavaScript, Python, C, C++</p>
+
+            <h3>Tools</h3>
+            <p>VS Code, GitHub</p>
+
+            <h3>Learning</h3>
+            <p>AI Development, Web Apps, Automation</p>
+        </div>
+
+        <!-- GOALS -->
+        <div id="goals" class="page">
+            <h2>My Goals</h2>
+            <p>Build advanced AI systems and smart assistants.</p>
+            <p>Create real-world impactful projects.</p>
+            <p>Become a skilled full-stack developer.</p>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" class="page">
+            <h2>Contact</h2>
+            <p>Email: panchaldhruvin71@gmail.com</p>
+            <p>GitHub: Coming soon</p>
+            <p>LinkedIn: Coming soon</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
