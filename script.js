@@ -1,10 +1,35 @@
-function showPage(pageId) {
+const text = [
+    "Python Developer",
+    "AI Enthusiast",
+    "Automation Builder",
+    "Problem Solver"
+];
 
-    const pages = document.querySelectorAll('.page');
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
 
-    pages.forEach(page => {
-        page.classList.remove('active');
-    });
+(function type() {
 
-    document.getElementById(pageId).classList.add('active');
-}
+    if (count === text.length) {
+        count = 0;
+    }
+
+    currentText = text[count];
+    letter = currentText.slice(0, ++index);
+
+    document.getElementById("typing").textContent = letter;
+
+    if (letter.length === currentText.length) {
+
+        setTimeout(() => {
+            count++;
+            index = 0;
+        }, 1500);
+
+    }
+
+    setTimeout(type, 100);
+
+})();
