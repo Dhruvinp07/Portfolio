@@ -2,82 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dhruvin Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruvin Panchal | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div class="container">
-
-    <!-- SIDEBAR -->
-    <div class="sidebar glass">
-        <img src="https://i.pravatar.cc/100" class="profile-img">
-        <h3>Dhruvin</h3>
-        <p>Developer</p>
-
-        <div class="menu">
-            <button onclick="showPage('home')">Home</button>
-            <button onclick="showPage('about')">About</button>
-            <button onclick="showPage('skills')">Skills</button>
-            <button onclick="showPage('goals')">Goals</button>
-            <button onclick="showPage('contact')">Contact</button>
-        </div>
+<div id="particles"></div>
+<header>
+    <nav>
+        <h2 class="logo">DP</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#github">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="hero">
+    <h1>Hi, I'm <span>Dhruvin Panchal</span></h1>
+    <h2 id="typing"></h2>
+    <p>
+        Passionate about Python, AI, Automation,
+        and building useful digital experiences.
+    </p>
+    <div class="buttons">
+        <a href="#github" class="btn">GitHub</a>
+        <a href="#contact" class="btn secondary">Contact</a>
     </div>
-
-    <!-- MAIN -->
-    <div class="main glass">
-
-        <!-- HOME -->
-        <div id="home" class="page active">
-            <h1>Dhruvin</h1>
-            <p class="subtitle">Aspiring Developer</p>
-            <p>I build AI projects, websites and smart systems.</p>
-            <p><b>Focused on:</b> Web Development | AI | Python</p>
-        </div>
-
-        <!-- ABOUT -->
-        <div id="about" class="page">
-            <h2>About Me</h2>
-            <p>I am a passionate developer who enjoys building creative and futuristic projects.</p>
-            <p>Currently learning web development, AI, and system-based applications.</p>
-            <p>I like solving problems and turning ideas into real working projects.</p>
-        </div>
-
-        <!-- SKILLS -->
-        <div id="skills" class="page">
-            <h2>Skills</h2>
-
-            <h3>Languages</h3>
-            <p>HTML, CSS, JavaScript, Python, C, C++</p>
-
-            <h3>Tools</h3>
-            <p>VS Code, GitHub</p>
-
-            <h3>Learning</h3>
-            <p>AI Development, Web Apps, Automation</p>
-        </div>
-
-        <!-- GOALS -->
-        <div id="goals" class="page">
-            <h2>My Goals</h2>
-            <p>Build advanced AI systems and smart assistants.</p>
-            <p>Create real-world impactful projects.</p>
-            <p>Become a skilled full-stack developer.</p>
-        </div>
-
-        <!-- CONTACT -->
-        <div id="contact" class="page">
-            <h2>Contact</h2>
-            <p>Email: panchaldhruvin71@gmail.com</p>
-            <p>GitHub: Coming soon</p>
-            <p>LinkedIn: Coming soon</p>
-        </div>
-
+</section>
+<section id="about" class="glass">
+    <h2>About Me</h2>
+    <p>
+        I enjoy creating software that combines automation,
+        artificial intelligence and clean user experiences.
+        I am currently learning modern AI systems,
+        cloud technologies and advanced Python development.
+    </p>
+</section>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Git</div>
+        <div class="skill-card">GitHub</div>
+        <div class="skill-card">AI</div>
+        <div class="skill-card">Automation</div>
     </div>
+</section>
+<section class="terminal">
 
-</div>
+<pre>
+> whoami
 
+Dhruvin Panchal
+
+Python Developer
+AI Enthusiast
+Problem Solver
+
+> currently_doing
+
+Building cool things...
+</pre>
+</section>
+<section id="github" class="glass">
+    <h2>GitHub</h2>
+    <p>
+        Explore my repositories and coding journey.
+    </p>
+    <a href="https://github.com/dhruvinp07" target="_blank" class="btn">
+        Visit GitHub
+    </a>
+</section>
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Let's connect and build something awesome.</p>
+    <div class="contact-links">
+        <a href="https://github.com/dhruvinp07" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/dhruvin-panchal-347024411/" target="_blank">LinkedIn</a>
+        <a href="mailto:panchaldhrvin71@email.com">Email</a>
+    </div>
+</section>
 <script src="script.js"></script>
-
 </body>
 </html>
